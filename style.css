@@ -101,4 +101,7 @@ body {
 a:visited {
   color: grey;
 }
+
+a:link {
+  color: grey;
 }
