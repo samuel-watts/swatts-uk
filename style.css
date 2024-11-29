@@ -15,7 +15,7 @@ body {
 }
 
 .dropdown button {
-  background-color: #007BFF;
+  background-color: #424242;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -63,10 +63,16 @@ body {
 .link {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #333;
+  background-color: #424242;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   font-size: 16px;
   margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
 }
 
 .link img {
@@ -76,5 +82,5 @@ body {
 }
 
 .link:hover {
-  background-color: #2e2e2e; /* A darker shade for hover effect */
+  background-color: #0056b3;
 }
