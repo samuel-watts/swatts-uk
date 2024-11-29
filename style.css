@@ -95,6 +95,12 @@
   width: 160px;
   height: 64px;
 }
+   
+.resize { 
+     width: 200px; /* Set your desired width */ 
+     height: 200px; /* Set your desired height */ 
+     object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */ 
+   } 
 
 .services > a > button {
   background: #f6821f;
