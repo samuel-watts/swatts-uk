@@ -57,22 +57,30 @@ body {
 }
 
 .links-container {
-  text-align: center;
+  margin: 20px;
 }
 
 .link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 15px;
-  text-decoration: none;
-  color: #007bff;
-  font-size: 18px;
-  font-weight: bold;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
 }
 
 .link img {
-  margin-right: 10px;
   width: 24px;
   height: 24px;
+  margin-right: 10px;
+}
+
+.link:hover {
+  background-color: #0056b3;
 }
