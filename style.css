@@ -1,93 +1,39 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #b3b3b3;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <div class="header">
+     <title>Swatts | Media</title>
+  	<h1>Welcome to Swatts Media</h1>
+  	<p>Access content and requests:</p>
+</head>
+   
+<body>
+  <div class="dropdown">
+    <button>Services</button>
+    <div class="dropdown-content">
+      <a href="https://downloads.swatts.uk/" target="_blank">Downloads</a>
+      <a href="https://radarr.swatts.uk/" target="_blank">Radarr</a>
+      <a href="https://sonarr.swatts.uk/" target="_blank">Sonarr</a>
+      <a href="https://tdarr.swatts.uk/" target="_blank">Tdarr</a>
+      <a href="https://stats.swatts.uk/" target="_blank">Stats</a>
+    </div>
+  </div>
 
-.header {
-  padding: 60px;
-  text-align: center;
-  color: Black;
-  font-size: 20px;
-}
+  <div class="links-container">
+    <button onclick="window.open('https://plex.swatts.uk/', '_blank')" class="link">
+      <img src="plex.svg" alt="Plex"> Plex
+    </button>
+    <button onclick="window.open('https://overseerr.swatts.uk/', '_blank')" class="link">
+      <img src="overseerr.svg" alt="Overseerr"> Overseerr
+    </button>
+  </div>
+</body>
 
-.dropdown {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.dropdown button {
-  background-color: #424242;
-  color: white;
-  padding: 10px 19px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.dropdown button:hover {
-  background-color: #4242a1;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.links-container {
-  margin: 20px;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  background-color: #424242;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 5px;
-  text-align: left;
-  width: 100%;
-}
-
-.link img {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-.link:hover {
-  background-color: #4242a1;
-}
+    <footer>
+  <p>Having issues? Check the status below:</p>
+  <p><a href="https://uptime.swatts.uk/status/media">Uptime</a></p>
+   </footer>
+</html>
