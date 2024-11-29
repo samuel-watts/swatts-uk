@@ -9,9 +9,7 @@ body {
 }
 
 .dropdown {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: relative;
 }
 
 .dropdown button {
@@ -27,13 +25,19 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 100%; /* Aligns directly below the button */
+  left: 0;
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   z-index: 1;
-  top: 100%; /* Aligns the dropdown directly below the button */
-  left: 0;
   border-radius: 5px;
+  pointer-events: none; /* Prevents accidental hiding when moving cursor */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  pointer-events: auto; /* Re-enables interaction when hovering */
 }
 
 .dropdown-content a {
@@ -46,10 +50,6 @@ body {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .links-container {
