@@ -1,149 +1,73 @@
-* {
-  box-sizing: border-box;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue",  Arial, sans-serif;
-  margin: auto;
-}
-
-.bg-image {
-  position: absolute;
-  bottom: -88%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 165px 0 124px;
-  width: 100%;
-  margin: auto;
-  border: #fbab40;
-  height: 100vh;
-  background-color: #242628;
-  background-image: url(./assets/world.svg);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 70px;
-  background-origin: padding-box;
-}
-
-.header h3 {
-  text-align: center;
-  color: #ff9e40;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
+body {
   margin: 0;
-  line-height: 36px;
-}
-
-.header {
+  font-family: Arial, sans-serif;
   display: flex;
-  position: relative;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  font-style: normal;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
-.header > h1 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
+.dropdown {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-.header > p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-  text-align: center;
-  color: #ffffff;
-  flex-grow: 0;
-  margin: 16px 0px;
-}
-
-.logo {
-  margin-top: 75px;
-}
-
-.logo > img {
-  width: 160px;
-  height: 64px;
-}
-   
-.resize { 
-     width: 32px; /* Set your desired width */ 
-     height: 32px; /* Set your desired height */ 
-     object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */ 
-   } 
-
-.plex > a > button
-.overseerr > a > button
-.services > a > button {
-  background: #f6821f;
-  border-radius: 4px;
-  border: none;
-  width: 180px;
-  margin-top: 78px;
-  height: 55px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 600;
+.dropdown button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
   font-size: 16px;
-  line-height: 19px;
-  background: rgba(246, 130, 31, 1);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        background-size: contain;
-        background-position-y: center;
-    }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  z-index: 1;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
 
-.container{
-    background-size: contain;
-    background-position-y: center;
-    }
-  pre {
-    font-size: 0.8rem;
-    padding: 8px 12px;
-    width: 100%;
-  }
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
-  body {
-    width: 100vw;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  .header img {
-    margin-left: 0;
-  }
+.links-container {
+  text-align: center;
+}
 
-  .installation-steps {
-    width: 100%;
-    box-sizing: border-box;
-  }
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  ol {
-    padding-left: 20px;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
+.link img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
 }
