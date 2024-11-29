@@ -15,7 +15,7 @@ body {
 }
 
 .dropdown button {
-  background-color: #9e29b3; /* Updated color */
+  background-color: #383838; /* Updated color */
   color: white;
   padding: 10px 15px;
   border: none;
@@ -25,7 +25,7 @@ body {
 }
 
 .dropdown button:hover {
-  background-color: #7a1f8d; /* A darker shade for hover effect */
+  background-color: #2e2e2e; /* A darker shade for hover effect */
 }
 
 .dropdown-content {
@@ -67,7 +67,7 @@ body {
 .link {
   display: flex;
   align-items: center;
-  background-color: #9e29b3; /* Updated color */
+  background-color: #383838; /* Updated color */
   color: white;
   padding: 10px 15px;
   border: none;
@@ -86,5 +86,5 @@ body {
 }
 
 .link:hover {
-  background-color: #7a1f8d; /* A darker shade for hover effect */
+  background-color: #2e2e2e; /* A darker shade for hover effect */
 }
