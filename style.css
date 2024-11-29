@@ -9,9 +9,9 @@ body {
 }
 
 .dropdown {
-  position: absolute; /* Ensures the dropdown is positioned relative to the page */
-  top: 10px; /* Adjust as needed for spacing */
-  left: 10px; /* Adjust as needed for spacing */
+  position: absolute; /* Keeps the dropdown in the top-left corner */
+  top: 10px;
+  left: 10px;
 }
 
 .dropdown button {
@@ -27,19 +27,19 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* Aligns directly below the button */
+  top: calc(100% - 2px); /* Aligns just below the button without gaps */
   left: 0;
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   z-index: 1;
   border-radius: 5px;
-  pointer-events: none; /* Prevents accidental hiding when moving cursor */
+  pointer-events: none; /* Avoids re-hiding due to quick mouse movements */
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  pointer-events: auto; /* Re-enables interaction when hovering */
+  pointer-events: auto; /* Allows interaction within the dropdown */
 }
 
 .dropdown-content a {
