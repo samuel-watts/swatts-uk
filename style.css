@@ -97,8 +97,8 @@
 }
    
 .resize { 
-     width: 200px; /* Set your desired width */ 
-     height: 200px; /* Set your desired height */ 
+     width: 32px; /* Set your desired width */ 
+     height: 32px; /* Set your desired height */ 
      object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */ 
    } 
 
