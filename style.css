@@ -97,3 +97,7 @@ body {
   color: grey;
   font-size: 12px;
 }
+
+a:visited {
+  color: grey;
+}
