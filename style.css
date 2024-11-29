@@ -69,22 +69,38 @@
   margin: 16px 0px;
 }
 
-.options {
-  display: flex;
-  flex-direction: row;
-}
-
-.options > a {
+.plex > a > button {
+  background: #f6821f;
+  border-radius: 4px;
+  border: none;
+  width: 180px;
+  margin-top: 78px;
+  height: 55px;
   color: #ffffff;
-  text-decoration: underline;
-  margin: 0px 8px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background: rgba(246, 130, 31, 1);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
-.options > a:first-of-type {
-  margin-right: 30px;
+.overseerr > a > button {
+  background: #f6821f;
+  border-radius: 4px;
+  border: none;
+  width: 180px;
+  margin-top: 78px;
+  height: 55px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background: rgba(246, 130, 31, 1);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .logo {
