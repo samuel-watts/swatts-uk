@@ -9,7 +9,9 @@ body {
 }
 
 .dropdown {
-  position: relative;
+  position: absolute; /* Ensures the dropdown is positioned relative to the page */
+  top: 10px; /* Adjust as needed for spacing */
+  left: 10px; /* Adjust as needed for spacing */
 }
 
 .dropdown button {
