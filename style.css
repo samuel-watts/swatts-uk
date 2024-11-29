@@ -5,7 +5,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f4;
+  background-color: #b3b3b3;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: Black;
+  font-size: 20px;
 }
 
 .dropdown {
@@ -25,7 +32,7 @@ body {
 }
 
 .dropdown button:hover {
-  background-color: #0056b3;
+  background-color: #4242a1;
 }
 
 .dropdown-content {
@@ -82,5 +89,5 @@ body {
 }
 
 .link:hover {
-  background-color: #0056b3;
+  background-color: #4242a1;
 }
